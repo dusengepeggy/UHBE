@@ -17,7 +17,7 @@ const addUser = async (req,res,next)=>{
        
             
 
-            signUpLink=`<h1> click the link to finish sign up </h1> <a href="https://uhfe-peggys-projects.versel.app">Sign in to continue</a>`;
+            signUpLink=`<h1> click the link to finish sign up </h1> <a href="https://uhfe-peggys-projects.vercel.app">Sign in to continue</a>`;
 
             sendEmail(newUser.email,'Signup into Umudugudu hub',signUpLink);
 
