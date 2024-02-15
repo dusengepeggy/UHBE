@@ -17,7 +17,7 @@ const addUser = async (req,res,next)=>{
        
             
 
-            signUpLink=`<h1> click the link to finish sign up </h1> <a href="http://localhost:5174/signup">Sign in to continue</a>`;
+            signUpLink=`<h1> click the link to finish sign up </h1> <a href="https://umudugudu-hub.onrender.com/signup">Sign in to continue</a>`;
 
             sendEmail(newUser.email,'Signup into Umudugudu hub',signUpLink);
 

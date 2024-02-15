@@ -89,7 +89,7 @@ const forgotPassword = async (req, res, next) => {
         else {
             var token = jwt.sign({ email: req.body }, process.env.JWT_SECRET_KEY, { expiresIn: 1200 });
 
-            var recoveryLink = `http://localhost:5174/reset-password/${token}/${validUser._id}`;
+            var recoveryLink = `https://umudugudu-hub.onrender.com/reset-password/${token}/${validUser._id}`;
 
             await sendEmail(validUser.email, 'Reset Password', recoveryLink);
 
